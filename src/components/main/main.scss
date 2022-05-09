@@ -1,0 +1,60 @@
+.main__catalog {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 27.5% 72%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.main__catalog-title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-left: 3.9%;
+    padding-top: 86px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main__catalog-breadcrumps {
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-size: 16px;
+    color: $link-hover;
+    padding-left: 42px;
+    list-style: none;
+    margin: 0;
+}
+
+.main__catalog-breadcrumps-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: $link-hover;
+
+    &:focus {
+        outline: none;
+        color: $base-black;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.main__catalog-breadcrumps-text {
+    position: relative;
+    margin: 0;
+    padding-left: 40px;
+
+    &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 12px;
+        width: 16px;
+        height: 16px;
+        background: url("../../images/arrowRight.svg") no-repeat center;
+    }
+}

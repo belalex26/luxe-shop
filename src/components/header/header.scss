@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+    background-color: $base-while;
+    margin-bottom: 110px;
+
+    &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: -205px;
+        right: 0;
+        width: 100%;
+        height: 289px;
+        background: url("../../images/Line_header.png") repeat-x left;
+        background-size: auto;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: -289px;
+        right: 0;
+        width: 1126px;
+        height: 289px;
+        background: url("../../images/header.png") no-repeat right;
+        background-size: contain;
+    }
+    
+}
+
+.header__container {
+    position: relative;
+    background-color: $header-bg;
+}

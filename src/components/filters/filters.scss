@@ -1,0 +1,194 @@
+.filters {
+    padding-left: 14.5%;
+    padding-top: 36px;
+}
+
+.filters__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: $base-black;
+    margin-bottom: 27px;
+}
+
+.filters__price-title,
+.filters__type-title,
+.filters__strings-title {
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 0.7px solid #DDDADA;
+}
+
+.filters__price {
+    width: 87%;
+    padding-bottom: 10px;
+}
+
+.filters__price-title {
+    padding-top: 33px;
+    margin-bottom: 22px;
+}
+
+.filters__price-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 1px;
+        background-color: $input-color;
+        top: 12px;
+        left: 46%;
+    }
+}
+
+.filters__price-input {
+    width: 84px;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px 0;
+    box-sizing: border-box;
+    border: 0.7px solid $input-color-base;
+    color: rgba($color: #000000, $alpha: 0.6);
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 0.7px solid $footer-bg;
+    }
+    
+    &:active {
+        opacity: 0.5;
+        border: 0.7px solid $checkbox-disable-border;
+    }
+}
+
+.filters__price-label {
+    position: relative;
+}
+
+.filters__type {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+}
+
+.filters__type-title {
+    padding-top: 30px;
+    margin-bottom: 23px;
+}
+
+.filters__strings {
+    width: 87%;
+    margin-bottom: 43px;
+}
+
+.filters__strings-title {
+    padding-top: 28px;
+    margin-bottom: 25px;
+}
+
+.filters__type-label,
+.filters__strings-label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.filters__strings-label {
+    margin-bottom: 15px;
+}
+
+.filters__type-checkbox,
+.filters__strings-checkbox {
+    opacity: 0;
+    position: absolute;
+	z-index: -1;
+    margin: 10px 0 0 10px;
+}
+
+.filters__type-text,
+.filters__strings-text {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $input-color-base;
+        top: 0;
+        left: -2px;
+        box-sizing: border-box;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background: url("../../images/check-mark-button.svg");
+        top: 4.8px;
+        left: 4px;
+        opacity: 0;
+    }
+}
+
+.filters__type-checkbox:checked + .filters__type-text::after,
+.filters__strings-checkbox:checked + .filters__strings-text::after {
+    opacity: 1;
+}
+  
+.filters__type-checkbox:hover + .filters__type-text::before,
+.filters__type-checkbox:focus + .filters__type-text::before,
+.filters__strings-checkbox:hover +.filters__strings-text::before,
+.filters__strings-checkbox:focus +.filters__strings-text::before {
+    border: 1px solid $input-color;
+}
+
+.filters__type-checkbox:active + .filters__type-text::before,
+.filters__strings-checkbox:active +.filters__strings-text::before {
+    border: 1px solid $button-base-1;
+}
+
+.filters__type-checkbox:disabled + .filters__type-text::before,
+.filters__strings-checkbox:disabled +.filters__strings-text::before {
+    background-color: $checkbox-disable-bg;
+    border: 1px solid $checkbox-disable-border;
+}
+
+.filters__type-checkbox:disabled + .filters__type-text,
+.filters__strings-checkbox:disabled +.filters__strings-text {
+    color: $checkbox-disable-border;
+}
+
+.filters__btn {
+    background-color: $button-base-1;
+    border-radius: 2px;
+    border: none;
+    text-transform: uppercase;
+    color: $base-while;
+    padding: 9px 28px;
+    font-size: 12px;
+    font-weight: bold;
+    
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $footer-bg;
+    }
+
+    &:active {
+        background-color: $input-color-base;
+    }
+
+}

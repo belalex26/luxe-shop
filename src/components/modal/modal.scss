@@ -1,0 +1,70 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(88, 87, 87, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #48494D;
+    font-family: 'droid-sans', 'Arial', sans-serif;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.modal.modal--active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.modal__content {
+    position: relative;
+    background-color: $base-while;
+    width: 740px;
+    box-shadow: 0px 5px 6px rgba(63, 63, 63, 0.2);
+    border-radius: 4px;
+}
+
+.modal__close {
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    border: none;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 1px;
+        background-color: #9F9E9E;
+        transform: rotate(45deg);
+        top: 14px;
+        left: 8px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid $footer-bg;
+    }
+
+    &:active {
+        opacity: 0.5;
+        border: 1px solid $checkbox-disable-border;
+    }
+}

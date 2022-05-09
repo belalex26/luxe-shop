@@ -1,0 +1,100 @@
+.remove-content__title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    line-height: 15px;
+    margin-left: 50px;
+    padding-top: 12px;
+}
+
+.remove-content__info {
+    display: flex;
+    padding-bottom: 22px;
+}
+
+.remove-content__img {
+    width: 125px;
+    height: 128px;
+    display: block;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+.remove-content__info-date {
+    width: 46%;
+}
+
+.remove-content__info-name {
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.85px;
+    font-weight: bold;
+    margin-top: 21px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.remove-content__info-article,
+.remove-content__info-type {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.remove-content__info-price {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    margin-top: 15px;
+}
+
+.remove-content__control {
+    padding-left: 26px;
+    text-align: center;
+}
+
+.remove-content__btn {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    padding: 12px 16px;
+    border-radius: 2px;
+}
+
+.remove-content__btn--remove {
+    border: none;
+    color: $base-while;
+    background-color: $button-base-2;
+    padding: 12px 47px;
+    margin-bottom: 17px;
+    margin-top: 20px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $button-base-2-hover;
+    }
+
+    &:active {
+        background-color: $button-base-2-active;
+    }
+}
+
+.remove-content__btn--close {
+    border: 1px solid $input-color;
+    color: $input-color;
+    background-color: $base-while;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        opacity: 0.7;
+    }
+
+    &:active {
+        border: 1px solid $input-color-active;
+        opacity: 0.5;
+    }
+}

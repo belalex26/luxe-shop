@@ -1,0 +1,131 @@
+.add-content__title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    line-height: 15px;
+    margin-left: 50px;
+    padding-top: 12px;
+}
+
+.add-content__info {
+    display: flex;
+    padding-bottom: 23px;
+}
+
+.add-content__img {
+    width: 56px;
+    height: 128px;
+    display: block;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 8px;
+    width: 13%;
+}
+
+.add-content__info-date {
+    width: 36.5%;
+}
+
+.add-content__info-name {
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.85px;
+    font-weight: bold;
+    margin-top: 21px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.add-content__info-article,
+.add-content__info-type {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.add-content__info-price {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    margin-top: 15px;
+}
+
+.add-content__btn {
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: $base-while;
+    letter-spacing: 0.8px;
+    padding: 12px 19px;
+    border-radius: 2px;
+    background-color: $button-base-2;
+    margin-top: 23px;
+    align-self: flex-start;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $button-base-2-hover;
+    }
+
+    &:active {
+        background-color: $button-base-2-active;
+    }
+}
+
+.add-content__success-wrap {
+    display: flex;
+    width: 482px;
+    margin: 0 auto;
+    padding-left: 6px;
+    padding-top: 23px;
+    padding-bottom: 53px;
+    align-items: center;
+}
+
+.add-content__success-link {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    padding: 11px 16px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.add-content__success-link--basket {
+    background-color: $button-base-2;
+    color: $base-while;
+    border: none;
+    padding: 13px 25px;
+    margin-right: 38px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $button-base-2-hover;
+    }
+
+    &:active {
+        background-color: $button-base-2-active;
+    }
+}
+
+.add-content__success-link--main {
+    border: 1px solid $input-color;
+    color: $input-color;
+    background: $base-while;
+    letter-spacing: 1.2px;
+    padding: 11px 12px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        opacity: 0.7;
+    }
+
+    &:active {
+        border: 1px solid $input-color-active;
+        opacity: 0.5;
+    }
+}

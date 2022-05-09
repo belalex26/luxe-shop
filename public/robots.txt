@@ -1,0 +1,3 @@
+user-agent: *
+Disallow: /downloads/
+Host: guitar-shop-belova-liard

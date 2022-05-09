@@ -1,0 +1,35 @@
+.not-page {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.not-page__title {
+    font-size: 250px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url('../../images/bg-not-page.jpg') center repeat-x;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: cover;
+}
+
+.not-page__text {
+    font-size: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    color: #585757;
+}
+
+.not-page__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    letter-spacing: 1.6px;
+    color: #585757;
+    border: 1px solid #585757;
+}

@@ -1,0 +1,164 @@
+.basket__item-img {
+    width: 125px;
+    height: 124px;
+    display: block;
+    margin-left: 4.5%;
+    margin-top: 21px;
+    margin-right: 8%;
+}
+
+.basket__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 19px;
+    
+
+    border-top: 0.7px solid $border-color;;
+    border-bottom: 0.7px solid $border-color;;
+}
+
+.basket__item-title {
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.85px;
+    font-weight: bold;
+    margin-top: 21px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.basket__item-info {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    align-self: flex-start;
+}
+
+.basket__item-article-number,
+.basket__item-guitar-type {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.basket__item-guitar-price {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    margin-top: 49px;
+    width: 33.2%;
+    text-align: center;
+}
+
+.basket__item-btns {
+    display: flex;
+    width: 8.5%;
+    margin-top: -35px;
+}
+
+.basket__item-btn {
+    border: none;
+    background-color: $base-while;
+    width: 25px;
+    height: 28px;
+    border: 1px solid $input-color-base;
+}
+
+.basket__item-count {
+    margin: 0;
+    text-align: center;
+    width: 28px;
+    font-size: 16px;
+    color: $input-color-base;
+    border-top: 1px solid $input-color-base;
+    border-bottom: 1px solid $input-color-base;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+
+}
+
+.basket__item-price-total {
+    text-align: right;
+    width: 22%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 49px;
+}
+
+.basket__item-btn--prev,
+.basket__item-btn--next {
+    position: relative;
+ 
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 1px;
+        background-color: $input-color-base;
+        top: 13px;
+        left: 8px;
+    }
+}
+
+.basket__item-btn--next {
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 1px;
+        background-color: $input-color-base;
+        transform: rotate(90deg);
+        top: 13px;
+        left: 8px;
+    }
+}
+
+.basket__item-remove {
+    position: absolute;
+    left: -6px;
+    top: 15px;
+    border: none;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 1px;
+        background-color: #9F9E9E;
+        transform: rotate(45deg);
+        top: 14px;
+        left: 8px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.basket__item-btn,
+.basket__item-remove {
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid $footer-bg;
+    }
+
+    &:active {
+        opacity: 0.5;
+        border: 1px solid $checkbox-disable-border;
+    }
+}
+

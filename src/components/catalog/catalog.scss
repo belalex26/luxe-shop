@@ -1,0 +1,81 @@
+.catalog {
+    padding-right: 4%;
+    padding-bottom: 33px;
+    display: grid;
+}
+
+.catalog__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 3%;
+    row-gap: 3.3%;
+    min-height: 914px;
+}
+
+.catalog__item {
+    align-self: flex-start;
+}
+
+.catalog__pagination {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 75px;
+    margin-right: 8px;
+    justify-self: end;
+    list-style: none;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+.catalog__pagination-item,
+.pagination__break {
+    margin: 0 4px;
+}
+
+.catalog__pagination-item a {
+    border-radius: 2px;
+    border: 0.7px solid $input-color-base;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.catalog__pagination--active a{
+    background-color: $input-color;
+    color: $base-while;
+}
+
+.catalog__pagination--prev a,
+.catalog__pagination--next a {
+    padding: 4px 20px;
+    border: 0.7px solid $input-color-base;
+    cursor: pointer;
+}
+
+.catalog__pagination--next {
+    margin-left: 9px;
+}
+
+.catalog__pagination-controls--disabled {
+    opacity: 0;
+}
+
+.pagination__break a {
+    padding: 4px 5px;
+    border: 0.7px solid $input-color-base;
+    cursor: pointer;
+}
+
+.catalog__list-text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 104px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}

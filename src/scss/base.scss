@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+}
+
+.body {
+    font-family: 'droid-sans', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}

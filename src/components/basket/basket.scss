@@ -1,0 +1,235 @@
+.basket {
+    padding-top: 113px;
+    padding-bottom: 69px;
+}
+
+.basket__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 3.2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.basket__title {
+    font-weight: bold;
+    font-size: 22px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.basket__breadcrumps {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.9px;
+    color: $link-hover;
+    list-style: none;
+    padding: 6px 0 0 0;
+    margin: 0;
+}
+
+.basket__breadcrumps-item {
+    position: relative;
+    padding-right: 35px;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 73px;
+        width: 16px;
+        height: 16px;
+        background: url("../../images/arrowRight.svg") no-repeat center;
+    }
+}
+
+.basket__breadcrumps-item.basket__breadcrumps-item--last {
+    &::after {
+        opacity: 0;
+    }
+}
+
+.basket__breadcrumps-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: $link-hover;
+    letter-spacing: 0.9px;
+
+    &:focus {
+        outline: none;
+        color: $base-black;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.basket__breadcrumps-text {
+    margin: 0;
+}
+
+.basket__list {
+    list-style: none;
+    padding-left: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 28px;
+    margin-bottom: 17px;
+    min-height: 333px;
+}
+
+.basket__promo {
+    position: relative;
+    padding-left: 6%;
+}
+
+.basket__promo-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: -27px;
+    margin-bottom: 0;
+}
+
+.basket__promo-text {
+    font-size: 12px;
+    margin-left: -27px;
+    letter-spacing: 1.2px;
+    margin-top: 9px;
+}
+
+.basket__promo-label {
+    position: relative;
+    margin-left: -27px;
+    margin-right: 33px;
+}
+
+.basket__promo-input {
+    width: 170px;
+    height: 36px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin-top: 10px;
+    border: 2px solid $border-color;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 2px solid $footer-bg;
+    }
+    
+    &:active {
+        opacity: 0.5;
+        border: 2px solid $checkbox-disable-border;
+    }
+}
+
+.basket__promo-btn {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $base-while;
+    letter-spacing: 0.8px;
+    padding: 8px 21px;
+    border-radius: 2px;
+    background-color: $button-base-1;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $input-color;
+    }
+
+    &:active {
+        background-color: $input-color-base;
+    }
+}
+
+.basket__control {
+    justify-self: end;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.basket__control-total {
+    margin-top: 15px;
+    margin-right: 13px;
+    margin-bottom: 37px;
+}
+
+.basket__control-submit {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $base-while;
+    letter-spacing: 0.8px;
+    padding: 8px 38px;
+    border-radius: 2px;
+    background-color: $button-base-2;
+    margin-right: 7px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $button-base-2-hover;
+    }
+
+    &:active {
+        background-color: $button-base-2-active;
+    }
+}
+
+.basket__promo-error,
+.basket__promo-check {
+    position: absolute;
+    top: 28px;
+    left: 24px;
+    opacity: 0;
+    color: $basket-index-color;
+    font-size: 12px;
+}
+
+.basket__promo-check {
+    position: absolute;
+    top: 128px;
+    left: -25px;
+    opacity: 0;
+    color: $success-code;
+    font-size: 16px;
+}
+
+.basket__list-text {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 700;
+    margin-top: 104px;
+}
+
+.basket__promo-error.basket__promo-error--active,
+.basket__promo-check.basket__promo-check--active {
+    opacity: 1;
+}
+
+.basket__promo-error.basket__promo-error--active + .basket__promo-input {
+    border-color: $basket-index-color;
+}
+
